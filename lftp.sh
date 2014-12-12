@@ -42,9 +42,9 @@ make install DESTDIR=$BASE
 ########### #################################################################
 
 mkdir -p $SRC/openssl && cd $SRC/openssl
-$WGET http://www.openssl.org/source/openssl-1.0.1g.tar.gz
-tar zxvf openssl-1.0.1g.tar.gz
-cd openssl-1.0.1g
+$WGET http://www.openssl.org/source/openssl-1.0.1j.tar.gz
+tar zxvf openssl-1.0.1j.tar.gz
+cd openssl-1.0.1j
 
 cat << "EOF" > openssl.patch
 --- Configure_orig      2013-11-19 11:32:38.755265691 -0700
@@ -120,9 +120,9 @@ make install DESTDIR=$BASE
 ######## ####################################################################
 
 mkdir -p $SRC/lftp && cd $SRC/lftp
-$WGET http://lftp.yar.ru/ftp/lftp-4.4.16.tar.gz
-tar zxvf lftp-4.4.16.tar.gz
-cd lftp-4.4.16
+$WGET http://lftp.yar.ru/ftp/lftp-4.6.0.tar.gz
+tar zxvf lftp-4.6.0.tar.gz
+cd lftp-4.6.0
 
 LDFLAGS=$LDFLAGS \
 CPPFLAGS=$CPPFLAGS \
